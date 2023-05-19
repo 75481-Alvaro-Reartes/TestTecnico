@@ -31,7 +31,7 @@ public class Programa {
         int nroSets;
         do {
             try{
-                nroSets = scanner.nextInt();//como harias para decirle al usuario que no es un entero lo que ingreso y vuelva a hacerlo?
+                nroSets = scanner.nextInt();
                 if (nroSets != 3 && nroSets != 5)
                     System.out.print("Error! El valor debe ser 3 o 5 Sets, segun las reglas oficiales del Tenis. Vuelva a Ingresar: ");
             } catch (InputMismatchException ex) {
@@ -68,6 +68,7 @@ public class Programa {
         System.out.print("-----------DEMOS COMIENZO AL PARTIDO!-----------");
 
 
+        
         iniciarPartido(nroSets,porcentajeVictoriaJ1,porcentajeVictoriaJ2, jugador1, jugador2);
 
         System.out.println("Desea hacer una revancha? Ingrese 'Si', o cualquier otro boton para terminar: ");
